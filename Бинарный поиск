@@ -1,0 +1,12 @@
+def do_search(array, target_value):
+    low = 0
+    high = len(array) - 1
+    while low <= high:
+        m = (low + high) // 2  
+        if array[m] > target_value:
+            high = m - 1  
+        elif array[m] < target_value:
+            low = m + 1 
+        else:
+            return m  
+    return -1 
