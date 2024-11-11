@@ -10,3 +10,21 @@ def do_search(array, target_value):
         else:
             return m  
     return -1 
+
+
+
+
+a = [-10,-5, 4,6,8,10,11]
+x = 10
+l = 0
+h  = len(a) -1 
+
+while l < h:
+  mid = (l+h)//2
+  if a[mid] == x:
+    print(f'таргет {a[mid]}, индекс {mid}')
+    break
+  elif a[mid] > x:
+    h = mid-1
+  else:
+    l = mid + 1
