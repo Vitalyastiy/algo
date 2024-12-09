@@ -1,0 +1,43 @@
+def is_palindrome(word):
+    # Приводим слово к нижнему регистру и удаляем пробелы
+    word = word.lower().replace(" ", "")
+    # Проверяем, равно ли слово своему обратному варианту
+    return word == word[::-1]
+
+# Пример использования
+word = "А роза упала на лапу Азора"
+if is_palindrome(word):
+    print(f'"{word}" является палиндромом.')
+else:
+    print(f'"{word}" не является палиндромом.')
+
+----------
+
+def is_palindrome(word):
+    # Приводим слово к нижнему регистру и удаляем пробелы
+    word = word.lower().replace(" ", "")
+    # Проверяем, равно ли слово своему обратному варианту
+    return word == word[::-1]
+
+# Пример использования
+word = "А роза упала на лапу Азора"
+if is_palindrome(word):
+    print(f'"{word}" является палиндромом.')
+else:
+    print(f'"{word}" не является палиндромом.')
+
+
+-----------------
+
+
+
+def is_palindrome(word):
+    word = word.lower().replace(" ", "")
+    return word == ''.join(reversed(word))
+
+# Пример использования
+word = "казак"
+if is_palindrome(word):
+    print(f'"{word}" является палиндромом.')
+else:
+    print(f'"{word}" не является палиндромом.')
